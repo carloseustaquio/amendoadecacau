@@ -1,0 +1,64 @@
+{
+  "kicker": "Produits",
+  "title": "Les fèves d'abord. Puis le chocolat rustique.",
+  "lead": "Ce que l'Europe demande aujourd'hui, c'est du cacao : des lots dès 1 kg jusqu'aux volumes de distribution, avec environ une tonne à Aveiro. Les chocolats, le thé et le poudre à boire viennent du même fruit — pas de prix sur la page, pas de panier.",
+  "note": "Nos chocolats et dérivés ne contiennent ni gluten ni conservateurs. Le chocolat au coco est sans lactose ; celui au lait utilise du lait sans lactose.",
+  "quoteCta": "Demander un devis ou un échantillon",
+  "items": [
+    {
+      "id": "beans-eu",
+      "featured": true,
+      "kicker": "Focus B2B · Aveiro",
+      "name": "Fèves de cacao — lots pour l'Europe",
+      "description": "Le même cacao d'altitude de la Fazenda Eustáquio, sélectionné pour chefs, chocolatiers et distributeurs. Lots à partir de 1 kg. Environ 1 t disponible à Aveiro, Portugal.",
+      "packaging": ["Lots à partir de 1 kg", "Environ 1 t à Aveiro", "Pour cuisine, bean-to-bar et distribution"],
+      "images": ["/images/produtos/amendoa-cacau.webp", "/images/slide/circulo-cacau-4x3.webp"],
+      "imageAlt": "Fèves de cacao sélectionnées Amêndoa D'Cacau"
+    },
+    {
+      "id": "beans-peeled",
+      "kicker": "Fèves décortiquées",
+      "name": "Fèves de cacao décortiquées, entières",
+      "description": "Fèves entières, décortiquées et sélectionnées — le fruit de la ferme pour la cuisine et la table.",
+      "packaging": ["Boîte 180 g", "Sachet 1 kg"],
+      "images": ["/images/produtos/amendoa-180g.webp", "/images/produtos/amendoa-cacau.webp"],
+      "imageAlt": "Paquet de fèves décortiquées 180 g"
+    },
+    {
+      "id": "chocolate-coco",
+      "kicker": "Chocolat rustique",
+      "name": "Chocolat rustique au lait de coco",
+      "description": "Chocolat artisanal aux fèves de cacao, lait de coco et sucre demerara. Le vert de l'emballage est celui de la forêt d'où vient le fruit.",
+      "packaging": ["Présentoir : 35 barres de 20 g", "Tablette 150 g"],
+      "images": ["/images/produtos/chocolate-coco-display.webp", "/images/produtos/chocolate-150g.webp", "/images/produtos/barrinha-1.webp"],
+      "imageAlt": "Présentoir de chocolat rustique au lait de coco"
+    },
+    {
+      "id": "chocolate-leite",
+      "kicker": "Chocolat rustique",
+      "name": "Chocolat rustique au lait sans lactose",
+      "description": "Chocolat artisanal aux fèves de cacao, lait sans lactose et sucre demerara. Le même profil rustique, pour qui veut du lait sans lactose.",
+      "packaging": ["Présentoir : 35 barres de 20 g, emballées", "Tablette 150 g"],
+      "images": ["/images/produtos/chocolate-slac-display.webp", "/images/produtos/chocolate-display.webp", "/images/produtos/150g.webp"],
+      "imageAlt": "Présentoir de chocolat rustique au lait sans lactose"
+    },
+    {
+      "id": "tea",
+      "kicker": "Infusion",
+      "name": "Thé de cacao",
+      "description": "Fabriqué avec la coque de la fève. Un thé au goût de chocolat, qui surprend presque tous ceux qui le goûtent.",
+      "packaging": ["Paquet 40 g"],
+      "images": ["/images/produtos/cha-de-cacau.webp"],
+      "imageAlt": "Thé de coque de cacao Amêndoa D'Cacau"
+    },
+    {
+      "id": "powder",
+      "kicker": "Cuisine",
+      "name": "Poudre de chocolat rustique",
+      "description": "Poudre de chocolat rustique pour recettes, boissons et pâtisserie — le fruit de la ferme en format cuisine.",
+      "packaging": ["Boîte 400 g"],
+      "images": ["/images/produtos/achocolatado-400g.webp"],
+      "imageAlt": "Boîte de 400 g de poudre de chocolat rustique"
+    }
+  ]
+}

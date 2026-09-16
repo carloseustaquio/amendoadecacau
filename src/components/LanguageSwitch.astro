@@ -1,0 +1,32 @@
+---
+import { localeLabels, localeNames, locales, localizedPath, type Locale, type PageKey } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  page: PageKey;
+}
+
+const { locale, page } = Astro.props;
+---
+
+<nav class="flex items-center gap-1 text-[0.72rem] font-semibold tracking-[0.14em]" aria-label="Language">
+  {
+    locales.map((code) => (
+      <a
+        href={localizedPath(page, code)}
+        hreflang={code}
+        lang={code}
+        aria-current={code === locale ? 'true' : undefined}
+        title={localeNames[code]}
+        class:list={[
+          'rounded-sm px-1.5 py-1 transition-colors',
+          code === locale
+            ? 'bg-forest text-white'
+            : 'text-cream/80 hover:text-white',
+        ]}
+      >
+        {localeLabels[code]}
+      </a>
+    ))
+  }
+</nav>

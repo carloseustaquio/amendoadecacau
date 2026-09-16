@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "eyebrow": "Notre histoire",
+    "title": "Une maison de cacao, de Bahia à Aveiro.",
+    "lead": "Amêndoa D'Cacau est une maison brésilienne de chocolats rustiques. Nous cultivons le cacao et menons le fruit jusqu'à la tablette — de l'arbre à la barre — l'Europe étant servie depuis Aveiro."
+  },
+  "portrait": {
+    "src": "/images/logo-round.webp",
+    "alt": "Sceau Amêndoa D'Cacau, integral natural, depuis 1890"
+  },
+  "timeline": [
+    {
+      "year": "1890",
+      "title": "Le trisaïeul et le fruit",
+      "text": "La famille est dans le cacao depuis le XIXe siècle. Notre trisaïeul travaillait déjà la culture dans le sud de Bahia ; les emballages disent encore desde 1890."
+    },
+    {
+      "year": "Générations",
+      "title": "La terre est restée à la maison",
+      "text": "Fils et petits-fils ont tenu la fazenda. Le cacao n'est pas un hobby de marque : c'est le métier qui traverse la famille."
+    },
+    {
+      "year": "15+ ans",
+      "title": "Cette génération",
+      "text": "Depuis plus de quinze ans, notre père mène la Fazenda Eustáquio. Planter, récolter, fermenter, sécher, sélectionner et transformer — le contrôle reste à la maison."
+    },
+    {
+      "year": "Aveiro",
+      "title": "Base européenne",
+      "text": "Le Portugal est le pied en Europe. Aveiro garde le stock de fèves pour celles et ceux qui font du chocolat de ce côté de l'Atlantique."
+    }
+  ]
+}

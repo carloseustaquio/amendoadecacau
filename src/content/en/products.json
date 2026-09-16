@@ -1,0 +1,64 @@
+{
+  "kicker": "Products",
+  "title": "Beans first. Then rustic chocolate.",
+  "lead": "What Europe is asking for now is cocoa: lots from 1 kg up to distributor volumes, with about one tonne in Aveiro. The chocolates, tea and drinking powder come from the same fruit — no prices on the page, no cart.",
+  "note": "Our chocolates and cocoa foods contain no gluten and no preservatives. The coconut chocolate is lactose-free; the milk chocolate uses lactose-free milk.",
+  "quoteCta": "Request a quote or sample",
+  "items": [
+    {
+      "id": "beans-eu",
+      "featured": true,
+      "kicker": "B2B highlight · Aveiro",
+      "name": "Cocoa beans — lots for Europe",
+      "description": "The same high-altitude cocoa from Fazenda Eustáquio, selected for chefs, makers and distributors. Lots from 1 kg. About 1 t available in Aveiro, Portugal.",
+      "packaging": ["Lots from 1 kg", "About 1 t in Aveiro", "For kitchens, bean-to-bar and distribution"],
+      "images": ["/images/produtos/amendoa-cacau.webp", "/images/slide/circulo-cacau-4x3.webp"],
+      "imageAlt": "Selected Amêndoa D'Cacau cocoa beans"
+    },
+    {
+      "id": "beans-peeled",
+      "kicker": "Peeled beans",
+      "name": "Whole peeled cocoa beans",
+      "description": "Whole, peeled, selected beans — the farm's fruit for the kitchen and the table.",
+      "packaging": ["180 g box", "1 kg bag"],
+      "images": ["/images/produtos/amendoa-180g.webp", "/images/produtos/amendoa-cacau.webp"],
+      "imageAlt": "180 g pack of peeled cocoa beans"
+    },
+    {
+      "id": "chocolate-coco",
+      "kicker": "Rustic chocolate",
+      "name": "Rustic chocolate with coconut milk",
+      "description": "Craft chocolate made with cocoa beans, coconut milk and demerara sugar. The green on the pack is the forest the fruit comes from.",
+      "packaging": ["Display: 35 × 20 g bars", "150 g tablet"],
+      "images": ["/images/produtos/chocolate-coco-display.webp", "/images/produtos/chocolate-150g.webp", "/images/produtos/barrinha-1.webp"],
+      "imageAlt": "Display of rustic coconut-milk chocolate"
+    },
+    {
+      "id": "chocolate-leite",
+      "kicker": "Rustic chocolate",
+      "name": "Rustic chocolate with lactose-free milk",
+      "description": "Craft chocolate made with cocoa beans, lactose-free milk and demerara sugar. The same rustic profile, for people who want milk without lactose.",
+      "packaging": ["Display: 35 individually wrapped 20 g bars", "150 g tablet"],
+      "images": ["/images/produtos/chocolate-slac-display.webp", "/images/produtos/chocolate-display.webp", "/images/produtos/150g.webp"],
+      "imageAlt": "Display of rustic lactose-free milk chocolate"
+    },
+    {
+      "id": "tea",
+      "kicker": "Infusion",
+      "name": "Cocoa tea",
+      "description": "Made from the bean shell. A chocolate-scented tea that surprises almost everyone who tries it.",
+      "packaging": ["40 g pack"],
+      "images": ["/images/produtos/cha-de-cacau.webp"],
+      "imageAlt": "Amêndoa D'Cacau cocoa-shell tea"
+    },
+    {
+      "id": "powder",
+      "kicker": "Kitchen",
+      "name": "Rustic chocolate powder",
+      "description": "Rustic chocolate powder for recipes, drinks and pastry — the farm's fruit in a cook's format.",
+      "packaging": ["400 g box"],
+      "images": ["/images/produtos/achocolatado-400g.webp"],
+      "imageAlt": "400 g box of rustic chocolate powder"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+---
+import { localizedPath, type Locale } from '../lib/i18n';
+
+interface Slide {
+  src: string;
+  alt: string;
+}
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  lead: string;
+  cta: string;
+  locale: Locale;
+  slides: Slide[];
+}
+
+const { eyebrow, title, lead, cta, locale, slides } = Astro.props;
+const contactHref = localizedPath('contact', locale);
+---
+
+<section class="relative min-h-[88vh] overflow-hidden bg-cocoa-deep text-cream">
+  <div class="absolute inset-0" data-hero-slides>
+    {
+      slides.map((slide, index) => (
+        <figure
+          class:list={[
+            'absolute inset-0 m-0 transition-opacity duration-700',
+            index === 0 ? 'opacity-100' : 'opacity-0',
+          ]}
+          data-hero-slide
+          aria-hidden={index === 0 ? 'false' : 'true'}
+        >
+          <img
+            src={slide.src}
+            alt={slide.alt}
+            class="h-full w-full object-cover"
+            fetchpriority={index === 0 ? 'high' : 'low'}
+          />
+        </figure>
+      ))
+    }
+    <div class="absolute inset-0 bg-gradient-to-r from-cocoa-deep/90 via-cocoa-deep/55 to-cocoa/20"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-cocoa-deep via-transparent to-cocoa-deep/30"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-end px-5 pb-16 pt-16 sm:px-8 lg:justify-center lg:pb-24 lg:pt-20">
+    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-gold">{eyebrow}</p>
+    <h1 class="max-w-3xl font-serif text-4xl font-semibold leading-[1.05] text-cream sm:text-6xl lg:text-7xl">
+      {title}
+    </h1>
+    <p class="mt-6 max-w-xl text-base text-cream/90 sm:text-lg">{lead}</p>
+    <div class="mt-8 flex flex-wrap items-center gap-4">
+      <a
+        href={contactHref}
+        class="inline-flex items-center rounded-full bg-forest px-6 py-3 text-sm font-semibold tracking-wide text-white transition hover:bg-forest-dark"
+      >
+        {cta}
+      </a>
+      {
+        slides.length > 1 && (
+          <div class="flex items-center gap-2" data-hero-dots>
+            {slides.map((slide, index) => (
+              <button
+                type="button"
+                class:list={[
+                  'h-2.5 rounded-full transition-all',
+                  index === 0 ? 'w-8 bg-forest' : 'w-2.5 bg-cream/50',
+                ]}
+                aria-label={`${index + 1} / ${slides.length}: ${slide.alt}`}
+                data-hero-dot
+                aria-current={index === 0 ? 'true' : undefined}
+              />
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  const root = document.querySelector('[data-hero-slides]');
+  const slides = [...document.querySelectorAll('[data-hero-slide]')];
+  const dots = [...document.querySelectorAll('[data-hero-dot]')];
+  if (root && slides.length > 1) {
+    let index = 0;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const show = (next: number) => {
+      slides[index]?.classList.remove('opacity-100');
+      slides[index]?.classList.add('opacity-0');
+      slides[index]?.setAttribute('aria-hidden', 'true');
+      dots[index]?.classList.remove('w-8', 'bg-forest');
+      dots[index]?.classList.add('w-2.5', 'bg-cream/50');
+      dots[index]?.removeAttribute('aria-current');
+      index = (next + slides.length) % slides.length;
+      slides[index]?.classList.remove('opacity-0');
+      slides[index]?.classList.add('opacity-100');
+      slides[index]?.setAttribute('aria-hidden', 'false');
+      dots[index]?.classList.add('w-8', 'bg-forest');
+      dots[index]?.classList.remove('w-2.5', 'bg-cream/50');
+      dots[index]?.setAttribute('aria-current', 'true');
+    };
+    dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+    if (!reduce) {
+      window.setInterval(() => show(index + 1), 7000);
+    }
+  }
+</script>

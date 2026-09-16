@@ -1,0 +1,75 @@
+{
+  "brand": "Amêndoa D'Cacau",
+  "tagline": "Rustic chocolate · tree to bar",
+  "since": "since 1890",
+  "skip": "Skip to content",
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu",
+  "nav": {
+    "home": "Home",
+    "story": "Our story",
+    "farm": "The farm",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "cta": {
+    "inquire": "Request a lot or sample",
+    "quote": "Request a quote",
+    "products": "See products",
+    "story": "Read our story",
+    "farm": "Visit the farm",
+    "contact": "Get in touch"
+  },
+  "form": {
+    "title": "Request a lot, quote or sample",
+    "intro": "There is no online shop. Tell us what you need — beans in Aveiro, rustic chocolate, or a sample — and we will answer as a family house.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "country": "Country",
+    "interest": "Interest",
+    "volume": "Volume",
+    "message": "Message",
+    "required": "required",
+    "optional": "optional",
+    "placeholders": {
+      "name": "Your name",
+      "email": "you@company.com",
+      "company": "Chocolate maker, kitchen, distributor…",
+      "country": "Portugal, France, Germany…",
+      "volume": "e.g. 25 kg, 1 t, sample",
+      "message": "How you plan to use the cocoa, timing, shipping…"
+    },
+    "interestOptions": [
+      { "value": "beans", "label": "Cocoa beans (B2B lots)" },
+      { "value": "chocolate", "label": "Chocolate and other products" },
+      { "value": "sample", "label": "Sample" }
+    ],
+    "submit": "Send enquiry",
+    "sending": "Sending…",
+    "emptyHint": "Nothing sent yet. Fields marked * are required.",
+    "loading": "Preparing your enquiry…",
+    "error": "We could not send it just now. Try again or email us directly.",
+    "errorRetry": "Try again",
+    "successTitle": "Enquiry ready.",
+    "successWeb3": "We have your message. We will reply from Aveiro as soon as we can.",
+    "successMailto": "Your email app will open with the message filled in. If it does not, use the button below or write to",
+    "openMail": "Open email",
+    "writeDirectly": "Or write to",
+    "another": "Send another enquiry"
+  },
+  "footer": {
+    "blurb": "A family cocoa house in the Atlantic Forest of southern Bahia, with a European base in Aveiro. Tree-to-bar, no agrochemicals.",
+    "social": "Social",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "creditsTitle": "Photo credits",
+    "creditsFamily": "Farm, product and brand photographs: the Amêndoa D'Cacau family / Fazenda Eustáquio.",
+    "rights": "Amêndoa D'Cacau. Fazenda Eustáquio, Bahia · Aveiro, Portugal."
+  },
+  "notFound": {
+    "title": "This page does not exist.",
+    "text": "The path may have changed. Go home or pick a language.",
+    "home": "Back to home"
+  }
+}

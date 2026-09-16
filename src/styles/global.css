@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Palatino Linotype", Palatino, serif;
+  --font-sans: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --color-forest: #55a929;
+  --color-forest-dark: #3d7d1c;
+  --color-forest-soft: #e7f4dc;
+  --color-cocoa: #3c2415;
+  --color-cocoa-deep: #24150c;
+  --color-cocoa-mid: #6b3e26;
+  --color-cocoa-light: #8d5a38;
+  --color-cream: #f6f0e6;
+  --color-paper: #fbf7f0;
+  --color-gold: #c4a35a;
+  --color-ink: #2a1c14;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-forest) 35%, white);
+}
+
+.bg-paper-grain {
+  background-color: var(--color-paper);
+  background-image: radial-gradient(rgba(60, 36, 21, 0.035) 0.7px, transparent 0.7px);
+  background-size: 16px 16px;
+}
+
+.prose-cocoa {
+  max-width: 42rem;
+}
+
+.prose-cocoa h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-cocoa);
+  margin: 0 0 1rem;
+}
+
+.prose-cocoa p {
+  margin: 0 0 1rem;
+}
+
+.prose-cocoa p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-cocoa strong {
+  font-weight: 600;
+  color: var(--color-cocoa);
+}
+
+.pod-divider {
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 28' fill='none'%3E%3Cpath d='M8 14c4-8 12-8 16 0s12 8 16 0 12-8 16 0 12 8 16 0' stroke='%2355A929' stroke-width='1.4' stroke-linecap='round'/%3E%3Cellipse cx='40' cy='14' rx='5' ry='7' fill='%2355A929' fill-opacity='0.18' stroke='%2355A929' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 80px 28px;
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-slide-active {
+  animation: hero-fade 0.8s ease;
+}

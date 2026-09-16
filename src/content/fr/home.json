@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "eyebrow": "De l'arbre à la tablette · depuis 1890",
+    "title": "Cacao d'altitude de Bahia, maintenant à Aveiro.",
+    "lead": "À la Fazenda Eustáquio, les cacaoyers poussent à l'ombre de la forêt atlantique, sans agrochimie. Une maison familiale depuis le XIXe siècle — avec environ une tonne de fèves prêtes pour chefs, chocolatiers et distributeurs en Europe.",
+    "cta": "Demander un lot ou un échantillon",
+    "slides": [
+      {
+        "src": "/images/cacau-na-arvore.webp",
+        "alt": "Cabosse mûre sur l'arbre, forêt atlantique de la Fazenda Eustáquio"
+      },
+      {
+        "src": "/images/slide/mao-com-cacau-4x3.webp",
+        "alt": "Mains tenant des fèves Amêndoa D'Cacau"
+      },
+      {
+        "src": "/images/slide/circulo-cacau-4x3.webp",
+        "alt": "Cercle de fèves de cacao sélectionnées"
+      }
+    ]
+  },
+  "origin": {
+    "title": "Deux rives, le même cacao",
+    "bahia": {
+      "kicker": "Origine",
+      "title": "Fazenda Eustáquio, sud de Bahia",
+      "text": "Près de Jussari et de la Serra do Teimoso, vers 1000 m d'altitude. Cacao d'ombre, en pleine Mata Atlântica.",
+      "image": "/images/cacau-na-arvore-4x3.webp",
+      "alt": "Cacao sur l'arbre à la Fazenda Eustáquio"
+    },
+    "aveiro": {
+      "kicker": "Europe",
+      "title": "Stock à Aveiro, Portugal",
+      "text": "Environ 1 t de fèves pour l'Europe. Pas de panier : on demande un lot ou un échantillon.",
+      "image": "/images/caixa-na-mao.webp",
+      "alt": "Boîte de chocolat rustique Amêndoa D'Cacau dans la main"
+    }
+  },
+  "family": {
+    "kicker": "Maison familiale",
+    "title": "Dans le cacao depuis le XIXe siècle",
+    "text": "Notre trisaïeul travaillait déjà le fruit au Brésil en 1890 — c'est ce que disent encore les emballages, desde 1890. Les générations suivantes sont restées à la terre. Depuis plus de quinze ans, notre père mène la Fazenda Eustáquio, de la plante à la tablette."
+  },
+  "teasers": [
+    {
+      "page": "products",
+      "image": "/images/produtos/amendoa-cacau.webp",
+      "alt": "Fèves de cacao décortiquées",
+      "title": "Fèves pour l'Europe",
+      "text": "Lots à partir de 1 kg. L'essentiel pour chefs, chocolatiers et distributeurs dans l'UE."
+    },
+    {
+      "page": "story",
+      "image": "/images/logo-4x3.webp",
+      "alt": "Marque Amêndoa D'Cacau, integral natural, depuis 1890",
+      "title": "Notre histoire",
+      "text": "Une maison brésilienne de chocolats rustiques, avec une base européenne à Aveiro."
+    },
+    {
+      "page": "farm",
+      "image": "/images/fazenda-barcaca.webp",
+      "alt": "Barge de séchage du cacao à la Fazenda Eustáquio",
+      "title": "La ferme",
+      "text": "Ombre des jequitibás et des ipês. Culture écologique, sans agrochimie."
+    }
+  ],
+  "ctaBand": {
+    "title": "Envie de travailler ce cacao ?",
+    "text": "Un devis, un échantillon ou un lot à Aveiro — écrivez-nous. Nous répondons comme une maison, pas comme une boutique.",
+    "button": "Nous écrire"
+  }
+}

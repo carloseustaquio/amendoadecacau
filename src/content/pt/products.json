@@ -1,0 +1,64 @@
+{
+  "kicker": "Produtos",
+  "title": "Amêndoas primeiro. Depois o chocolate rústico.",
+  "lead": "O que a Europa pede agora é cacau: lotes a partir de 1 kg, até volumes de distribuição, com cerca de uma tonelada em Aveiro. Os chocolates, o chá e o achocolatado seguem o mesmo fruto — sem preços na vitrine, sem carrinho.",
+  "note": "Os nossos chocolates e derivados não têm glúten nem conservantes. O chocolate de coco é sem lactose; o de leite usa leite sem lactose.",
+  "quoteCta": "Pedir orçamento ou amostra",
+  "items": [
+    {
+      "id": "beans-eu",
+      "featured": true,
+      "kicker": "Destaque B2B · Aveiro",
+      "name": "Amêndoas de cacau — lotes para a Europa",
+      "description": "O mesmo cacau de altitude da Fazenda Eustáquio, seleccionado para chefs, chocolateiros e distribuidores. Lotes a partir de 1 kg. Cerca de 1 t disponível em Aveiro, Portugal.",
+      "packaging": ["Lotes a partir de 1 kg", "Cerca de 1 t em Aveiro", "Para cozinha, bean-to-bar e distribuição"],
+      "images": ["/images/produtos/amendoa-cacau.webp", "/images/slide/circulo-cacau-4x3.webp"],
+      "imageAlt": "Amêndoas de cacau seleccionadas da Amêndoa D'Cacau"
+    },
+    {
+      "id": "beans-peeled",
+      "kicker": "Amêndoa descascada",
+      "name": "Amêndoa de cacau descascada, inteira",
+      "description": "Amêndoas inteiras, descascadas e seleccionadas — o fruto da fazenda em formato de cozinha e de mesa.",
+      "packaging": ["Caixa 180 g", "Saco 1 kg"],
+      "images": ["/images/produtos/amendoa-180g.webp", "/images/produtos/amendoa-cacau.webp"],
+      "imageAlt": "Embalagem de amêndoa de cacau descascada 180 g"
+    },
+    {
+      "id": "chocolate-coco",
+      "kicker": "Chocolate rústico",
+      "name": "Chocolate rústico com leite de coco",
+      "description": "Chocolate artesanal com amêndoas de cacau, leite de coco e açúcar demerara. O verde da embalagem é o da floresta de onde vem o fruto.",
+      "packaging": ["Display: 35 unidades de 20 g", "Tablete 150 g"],
+      "images": ["/images/produtos/chocolate-coco-display.webp", "/images/produtos/chocolate-150g.webp", "/images/produtos/barrinha-1.webp"],
+      "imageAlt": "Display de chocolate rústico com leite de coco"
+    },
+    {
+      "id": "chocolate-leite",
+      "kicker": "Chocolate rústico",
+      "name": "Chocolate rústico com leite sem lactose",
+      "description": "Chocolate artesanal com amêndoas de cacau, leite sem lactose e açúcar demerara. O mesmo perfil rústico, para quem quer leite e não quer lactose.",
+      "packaging": ["Display: 35 unidades de 20 g, embrulhadas", "Tablete 150 g"],
+      "images": ["/images/produtos/chocolate-slac-display.webp", "/images/produtos/chocolate-display.webp", "/images/produtos/150g.webp"],
+      "imageAlt": "Display de chocolate rústico com leite sem lactose"
+    },
+    {
+      "id": "tea",
+      "kicker": "Infusão",
+      "name": "Chá de cacau",
+      "description": "Feito com a casca da amêndoa. Um chá com gosto de chocolate, surpreendente para quem o prova pela primeira vez.",
+      "packaging": ["Pacote 40 g"],
+      "images": ["/images/produtos/cha-de-cacau.webp"],
+      "imageAlt": "Chá de casca de cacau Amêndoa D'Cacau"
+    },
+    {
+      "id": "powder",
+      "kicker": "Cozinha",
+      "name": "Achocolatado de chocolate rústico",
+      "description": "Pó de chocolate rústico para receitas, bebidas e pastelaria — o fruto da fazenda em formato de cozinha.",
+      "packaging": ["Caixa 400 g"],
+      "images": ["/images/produtos/achocolatado-400g.webp"],
+      "imageAlt": "Achocolatado rústico em caixa de 400 g"
+    }
+  ]
+}

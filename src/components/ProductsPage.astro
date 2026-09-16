@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import ProductCard from './ProductCard.astro';
+import { getPageMarkdown, getProducts, getUi } from '../lib/content';
+import { localizedPath, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const products = getProducts(locale);
+const ui = getUi(locale);
+const page = await getPageMarkdown(locale, 'products');
+const Content = page.Content;
+const featured = products.items.find((item) => item.featured);
+const rest = products.items.filter((item) => !item.featured);
+const contactHref = localizedPath('contact', locale);
+---
+
+<Base
+  locale={locale}
+  page="products"
+  title={page.title}
+  description={page.description}
+  image="/images/produtos-4x3.webp"
+>
+  <section class="bg-cream">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-20">
+      <p class="text-xs font-semibold uppercase tracking-[0.24em] text-forest">{products.kicker}</p>
+      <h1 class="mt-3 max-w-3xl font-serif text-4xl text-cocoa sm:text-6xl">{products.title}</h1>
+      <p class="mt-5 max-w-2xl text-lg text-cocoa-mid">{products.lead}</p>
+      <div class="prose-cocoa mt-8 text-cocoa-mid">
+        <Content />
+      </div>
+      <p class="mt-6 max-w-2xl rounded-2xl bg-forest-soft px-4 py-3 text-sm text-cocoa">{products.note}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl space-y-8 px-5 py-12 sm:px-8">
+    {
+      featured && (
+        <ProductCard
+          featured
+          name={featured.name}
+          kicker={featured.kicker}
+          description={featured.description}
+          packaging={featured.packaging}
+          images={featured.images}
+          imageAlt={featured.imageAlt}
+          ctaHref={contactHref}
+          ctaLabel={products.quoteCta}
+        />
+      )
+    }
+    <div class="grid gap-6 lg:grid-cols-2">
+      {
+        rest.map((item) => (
+          <ProductCard
+            name={item.name}
+            kicker={item.kicker}
+            description={item.description}
+            packaging={item.packaging}
+            images={item.images}
+            imageAlt={item.imageAlt}
+            ctaHref={contactHref}
+            ctaLabel={ui.cta.quote}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="bg-cocoa text-cream">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-14 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
+      <p class="font-serif text-3xl">{products.quoteCta}</p>
+      <a
+        href={contactHref}
+        class="inline-flex rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white hover:bg-forest-dark"
+      >
+        {ui.cta.contact}
+      </a>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "eyebrow": "A fazenda",
+    "title": "Fazenda Eustáquio, à sombra da mata.",
+    "lead": "Sul da Bahia, perto de Jussari e da reserva da Serra do Teimoso. Cerca de 1000 m de altitude. Cacau de sombra, cultivo ecológico.",
+    "image": "/images/cacau-na-arvore.webp",
+    "alt": "Cabossa de cacau laranja na árvore da Fazenda Eustáquio"
+  },
+  "facts": [
+    { "label": "Nome", "value": "Fazenda Eustáquio" },
+    { "label": "Região", "value": "Sul da Bahia · Jussari · Serra do Teimoso" },
+    { "label": "Altitude", "value": "cerca de 1000 m" },
+    { "label": "Bioma", "value": "Mata Atlântica" },
+    { "label": "Sombra", "value": "jequitibás e ipês" },
+    { "label": "Cultivo", "value": "ecológico, sem agroquímicos" }
+  ],
+  "gallery": [
+    {
+      "src": "/images/fazenda-barcaca.webp",
+      "alt": "Barcaça de secagem do cacau na Fazenda Eustáquio",
+      "caption": "A barcaça: o cacau seca ao sol da serra."
+    },
+    {
+      "src": "/images/cacau-e-trabalhador.webp",
+      "alt": "Trabalhador da fazenda junto ao cacau recém-aberto",
+      "caption": "Da roça à amêndoa, o ofício é manual."
+    },
+    {
+      "src": "/images/licensed/cocoa-pod-open-aude.jpg",
+      "alt": "Fruto de cacau aberto com amêndoas frescas",
+      "caption": "Fruto aberto — Aude, CC BY-SA 3.0, Wikimedia Commons.",
+      "licensed": true
+    },
+    {
+      "src": "/images/licensed/cacao-red-pods-hobgood.jpg",
+      "alt": "Frutos vermelhos de Theobroma cacao na árvore",
+      "caption": "Frutos vermelhos — Nick Hobgood, CC BY-SA 3.0, Wikimedia Commons.",
+      "licensed": true
+    }
+  ]
+}

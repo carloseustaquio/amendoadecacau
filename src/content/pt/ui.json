@@ -1,0 +1,75 @@
+{
+  "brand": "Amêndoa D'Cacau",
+  "tagline": "Chocolates rústicos · da árvore à barra",
+  "since": "desde 1890",
+  "skip": "Saltar para o conteúdo",
+  "openMenu": "Abrir menu",
+  "closeMenu": "Fechar menu",
+  "nav": {
+    "home": "Início",
+    "story": "Quem somos",
+    "farm": "A fazenda",
+    "products": "Produtos",
+    "contact": "Contato"
+  },
+  "cta": {
+    "inquire": "Pedir lote ou amostra",
+    "quote": "Pedir orçamento",
+    "products": "Ver produtos",
+    "story": "A nossa história",
+    "farm": "Conhecer a fazenda",
+    "contact": "Falar conosco"
+  },
+  "form": {
+    "title": "Pedido de lote, orçamento ou amostra",
+    "intro": "Não temos loja online. Conte-nos o que precisa — amêndoas em Aveiro, chocolate rústico ou uma amostra — e respondemos como casa.",
+    "name": "Nome",
+    "email": "Email",
+    "company": "Empresa",
+    "country": "País",
+    "interest": "Interesse",
+    "volume": "Volume",
+    "message": "Mensagem",
+    "required": "obrigatório",
+    "optional": "opcional",
+    "placeholders": {
+      "name": "O seu nome",
+      "email": "voce@empresa.com",
+      "company": "Chocolateira, restaurante, distribuição…",
+      "country": "Portugal, França, Alemanha…",
+      "volume": "ex. 25 kg, 1 t, amostra",
+      "message": "Como pensa usar o cacau, prazos, envio…"
+    },
+    "interestOptions": [
+      { "value": "beans", "label": "Amêndoas de cacau (lotes B2B)" },
+      { "value": "chocolate", "label": "Chocolates e outros produtos" },
+      { "value": "sample", "label": "Amostra" }
+    ],
+    "submit": "Enviar pedido",
+    "sending": "A enviar…",
+    "emptyHint": "Nada enviado ainda. Campos com * são obrigatórios.",
+    "loading": "A preparar o seu pedido…",
+    "error": "Não foi possível enviar agora. Tente de novo ou escreva-nos directamente.",
+    "errorRetry": "Tentar outra vez",
+    "successTitle": "Pedido pronto.",
+    "successWeb3": "Recebemos a sua mensagem. Respondemos a partir de Aveiro assim que possível.",
+    "successMailto": "O seu cliente de email vai abrir com a mensagem pronta. Se isso não acontecer, use o botão abaixo ou escreva para",
+    "openMail": "Abrir o email",
+    "writeDirectly": "Ou escreva para",
+    "another": "Enviar outro pedido"
+  },
+  "footer": {
+    "blurb": "Casa familiar de cacau na Mata Atlântica do sul da Bahia, com base europeia em Aveiro. Tree-to-bar, sem agroquímicos.",
+    "social": "Redes",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "creditsTitle": "Créditos fotográficos",
+    "creditsFamily": "Fotografias da fazenda, dos produtos e da marca: família Amêndoa D'Cacau / Fazenda Eustáquio.",
+    "rights": "Amêndoa D'Cacau. Fazenda Eustáquio, Bahia · Aveiro, Portugal."
+  },
+  "notFound": {
+    "title": "Esta página não existe.",
+    "text": "O caminho pode ter mudado. Volte ao início ou escolha o idioma.",
+    "home": "Ir para o início"
+  }
+}

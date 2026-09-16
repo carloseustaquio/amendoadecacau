@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "eyebrow": "Our story",
+    "title": "A cocoa house, from Bahia to Aveiro.",
+    "lead": "Amêndoa D'Cacau is a Brazilian rustic-chocolate house. We grow the cocoa and take the fruit to the bar — tree-to-bar — with Europe served from Aveiro."
+  },
+  "portrait": {
+    "src": "/images/logo-round.webp",
+    "alt": "Amêndoa D'Cacau seal, integral natural, since 1890"
+  },
+  "timeline": [
+    {
+      "year": "1890",
+      "title": "Great-great-grandfather and the fruit",
+      "text": "The family has been in cocoa since the nineteenth century. Our great-great-grandfather was already working the crop in southern Bahia; the packaging still reads since 1890."
+    },
+    {
+      "year": "Generations",
+      "title": "The farm stayed in the family",
+      "text": "Children and grandchildren kept the land. Cocoa here was never a branding hobby: it is the craft that runs through the house."
+    },
+    {
+      "year": "15+ years",
+      "title": "This generation",
+      "text": "For more than fifteen years our father has run Fazenda Eustáquio. Planting, harvest, fermentation, drying, selection and making — control stays in the family."
+    },
+    {
+      "year": "Aveiro",
+      "title": "European base",
+      "text": "Portugal is the foothold in Europe. Aveiro holds the bean stock for chocolate makers on this side of the Atlantic."
+    }
+  ]
+}

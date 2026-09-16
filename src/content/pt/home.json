@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "eyebrow": "Tree-to-bar · desde 1890",
+    "title": "Cacau de altitude da Bahia, agora em Aveiro.",
+    "lead": "Na Fazenda Eustáquio o cacau cresce à sombra da Mata Atlântica, sem agroquímicos. Uma casa familiar desde o século XIX — com cerca de uma tonelada de amêndoas pronta para chefs, chocolateiros e distribuidores na Europa.",
+    "cta": "Pedir lote ou amostra",
+    "slides": [
+      {
+        "src": "/images/cacau-na-arvore.webp",
+        "alt": "Fruto de cacau maduro na árvore, na Mata Atlântica da Fazenda Eustáquio"
+      },
+      {
+        "src": "/images/slide/mao-com-cacau-4x3.webp",
+        "alt": "Mãos com amêndoas de cacau da Amêndoa D'Cacau"
+      },
+      {
+        "src": "/images/slide/circulo-cacau-4x3.webp",
+        "alt": "Círculo de amêndoas de cacau selecionadas"
+      }
+    ]
+  },
+  "origin": {
+    "title": "Duas margens, o mesmo cacau",
+    "bahia": {
+      "kicker": "Origem",
+      "title": "Fazenda Eustáquio, sul da Bahia",
+      "text": "Junto a Jussari e à Serra do Teimoso, a cerca de 1000 m de altitude. Cacau de sombra, em plena Mata Atlântica.",
+      "image": "/images/cacau-na-arvore-4x3.webp",
+      "alt": "Cacau na árvore na Fazenda Eustáquio"
+    },
+    "aveiro": {
+      "kicker": "Europa",
+      "title": "Stock em Aveiro, Portugal",
+      "text": "Cerca de 1 t de amêndoas para a Europa. Sem carrinho de compras: o caminho é um pedido de lote ou de amostra.",
+      "image": "/images/caixa-na-mao.webp",
+      "alt": "Caixa de chocolate rústico Amêndoa D'Cacau na mão"
+    }
+  },
+  "family": {
+    "kicker": "Casa familiar",
+    "title": "No cacau desde o século XIX",
+    "text": "O tetravô já trabalhava o fruto no Brasil de 1890 — é isso que as embalagens dizem, desde 1890. As gerações seguintes ficaram na lavoura. Há mais de quinze anos o nosso pai conduz a Fazenda Eustáquio, da planta até à barra."
+  },
+  "teasers": [
+    {
+      "page": "products",
+      "image": "/images/produtos/amendoa-cacau.webp",
+      "alt": "Amêndoas de cacau descascadas",
+      "title": "Amêndoas para a Europa",
+      "text": "Lotes a partir de 1 kg. O destaque para chefs, makers e distribuidores na UE."
+    },
+    {
+      "page": "story",
+      "image": "/images/logo-4x3.webp",
+      "alt": "Logótipo Amêndoa D'Cacau, integral natural, desde 1890",
+      "title": "Quem somos",
+      "text": "Uma marca brasileira de chocolates rústicos, com base europeia em Aveiro."
+    },
+    {
+      "page": "farm",
+      "image": "/images/fazenda-barcaca.webp",
+      "alt": "Barcaça de secagem do cacau na Fazenda Eustáquio",
+      "title": "A fazenda",
+      "text": "Sombra de jequitibás e ipês. Cultivo ecológico, sem agroquímicos."
+    }
+  ],
+  "ctaBand": {
+    "title": "Quer trabalhar este cacau?",
+    "text": "Orçamento, amostra ou um lote em Aveiro — escreva-nos. Respondemos como casa, não como loja.",
+    "button": "Falar conosco"
+  }
+}

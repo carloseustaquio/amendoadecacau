@@ -1,0 +1,255 @@
+---
+import '../styles/global.css';
+import LanguageSwitch from '../components/LanguageSwitch.astro';
+import { getUi } from '../lib/content';
+import {
+  defaultLocale,
+  hreflang,
+  locales,
+  localizedPath,
+  type Locale,
+  type PageKey,
+} from '../lib/i18n';
+import { FACEBOOK_URL, INSTAGRAM_URL, licensedCredits, SITE_NAME } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+  page: PageKey;
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const {
+  locale,
+  page,
+  title,
+  description,
+  image = '/images/cacau-na-arvore.webp',
+} = Astro.props;
+
+const ui = getUi(locale);
+const canonical = new URL(localizedPath(page, locale), Astro.site);
+const ogImage = new URL(image, Astro.site);
+const pageTitle = page === 'home' ? `${SITE_NAME} · ${ui.tagline}` : `${title} · ${SITE_NAME}`;
+const navItems: { key: PageKey; label: string }[] = [
+  { key: 'story', label: ui.nav.story },
+  { key: 'farm', label: ui.nav.farm },
+  { key: 'products', label: ui.nav.products },
+  { key: 'contact', label: ui.nav.contact },
+];
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    {
+      locales.map((code) => (
+        <link
+          rel="alternate"
+          hreflang={hreflang[code]}
+          href={new URL(localizedPath(page, code), Astro.site).href}
+        />
+      ))
+    }
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(localizedPath(page, defaultLocale), Astro.site).href}
+    />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={ogImage.href} />
+    <meta property="og:locale" content={locale === 'pt' ? 'pt_BR' : locale === 'fr' ? 'fr_FR' : 'en_GB'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-paper-grain font-sans text-ink antialiased">
+    <a
+      href="#content"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-forest focus:px-4 focus:py-2 focus:text-white"
+    >
+      {ui.skip}
+    </a>
+
+    <header class="sticky top-0 z-40 bg-cocoa-deep">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-2.5 sm:px-8">
+        <a href={localizedPath('home', locale)} class="flex min-w-0 items-center">
+          <img
+            src="/images/logo-a.webp"
+            alt={SITE_NAME}
+            width="200"
+            height="105"
+            class="h-10 w-auto max-h-10 max-w-[min(12.5rem,calc(100vw-7.5rem))] object-contain object-left sm:h-12 sm:max-h-12 sm:max-w-[15rem]"
+          />
+        </a>
+
+        <div class="hidden items-center gap-7 lg:flex">
+          <nav class="flex items-center gap-6 text-sm font-medium text-cream/90" aria-label="Main">
+            {
+              navItems.map((item) => (
+                <a
+                  href={localizedPath(item.key, locale)}
+                  aria-current={item.key === page ? 'page' : undefined}
+                  class:list={[
+                    'tracking-wide transition hover:text-white',
+                    item.key === page && 'text-white underline decoration-forest decoration-2 underline-offset-8',
+                  ]}
+                >
+                  {item.label}
+                </a>
+              ))
+            }
+          </nav>
+          <LanguageSwitch locale={locale} page={page} />
+        </div>
+
+        <button
+          type="button"
+          class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-cream/30 text-cream lg:hidden"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label={ui.openMenu}
+        >
+          <span class="flex flex-col gap-1.5" aria-hidden="true">
+            <span class="block h-0.5 w-5 bg-current"></span>
+            <span class="block h-0.5 w-5 bg-current"></span>
+            <span class="block h-0.5 w-5 bg-current"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="mobile-nav"
+      class="fixed inset-0 z-50 hidden overflow-y-auto bg-cocoa-deep px-6 py-6 text-cream lg:hidden"
+      data-menu-panel
+    >
+      <div class="flex items-center justify-between gap-3">
+        <a href={localizedPath('home', locale)} class="flex min-w-0 items-center">
+          <img
+            src="/images/logo-a.webp"
+            alt={SITE_NAME}
+            width="200"
+            height="105"
+            class="h-10 w-auto max-h-10 object-contain object-left"
+          />
+        </a>
+        <button
+          type="button"
+          class="rounded-full border border-cream/30 px-3 py-2 text-sm"
+          data-menu-close
+        >
+          {ui.closeMenu}
+        </button>
+      </div>
+      <nav class="mt-10 grid gap-4 font-serif text-3xl" aria-label="Main">
+        <a href={localizedPath('home', locale)}>{ui.nav.home}</a>
+        {
+          navItems.map((item) => (
+            <a href={localizedPath(item.key, locale)}>{item.label}</a>
+          ))
+        }
+      </nav>
+      <div class="mt-10">
+        <LanguageSwitch locale={locale} page={page} />
+      </div>
+    </div>
+
+    <main id="content">
+      <slot />
+    </main>
+
+    <footer class="bg-cocoa-deep text-cream">
+      <div class="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-4">
+        <div class="lg:col-span-2">
+          <img src="/images/logo-a.webp" alt={SITE_NAME} class="h-8 w-auto" />
+          <p class="mt-4 max-w-md text-sm leading-relaxed text-cream/80">{ui.footer.blurb}</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gold">{ui.nav.home}</p>
+          <ul class="mt-3 grid gap-2 text-sm">
+            <li><a class="hover:text-white" href={localizedPath('story', locale)}>{ui.nav.story}</a></li>
+            <li><a class="hover:text-white" href={localizedPath('farm', locale)}>{ui.nav.farm}</a></li>
+            <li><a class="hover:text-white" href={localizedPath('products', locale)}>{ui.nav.products}</a></li>
+            <li><a class="hover:text-white" href={localizedPath('contact', locale)}>{ui.nav.contact}</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gold">{ui.footer.social}</p>
+          <ul class="mt-3 grid gap-2 text-sm">
+            <li>
+              <a class="hover:text-forest" href={INSTAGRAM_URL} rel="noreferrer" target="_blank">
+                {ui.footer.instagram}
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-forest" href={FACEBOOK_URL} rel="noreferrer" target="_blank">
+                {ui.footer.facebook}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-cream/10">
+        <div class="mx-auto max-w-6xl px-5 py-6 text-xs leading-relaxed text-cream/60 sm:px-8">
+          <p>© {new Date().getFullYear()} {ui.footer.rights}</p>
+          <p class="mt-2" id="creditos">
+            <span class="font-semibold text-cream/80">{ui.footer.creditsTitle}.</span>
+            {' '}{ui.footer.creditsFamily}
+            {
+              licensedCredits.map((credit) => (
+                <>
+                  {' '}
+                  <a class="underline decoration-cream/30 hover:text-cream" href={credit.sourceUrl}>
+                    {credit.title}
+                  </a>
+                  {' — '}
+                  {credit.author},{' '}
+                  <a class="underline decoration-cream/30 hover:text-cream" href={credit.licenseUrl}>
+                    {credit.license}
+                  </a>
+                  , Wikimedia Commons.
+                </>
+              ))
+            }
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const button = document.querySelector('[data-menu-button]');
+      const panel = document.querySelector('[data-menu-panel]');
+      const close = document.querySelector('[data-menu-close]');
+      const toggle = (open: boolean) => {
+        if (!(button instanceof HTMLElement) || !(panel instanceof HTMLElement)) return;
+        panel.classList.toggle('hidden', !open);
+        button.setAttribute('aria-expanded', String(open));
+        document.body.style.overflow = open ? 'hidden' : '';
+      };
+      button?.addEventListener('click', () => toggle(true));
+      close?.addEventListener('click', () => toggle(false));
+      panel?.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => toggle(false));
+      });
+    </script>
+  </body>
+</html>

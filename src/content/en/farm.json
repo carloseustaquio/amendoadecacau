@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "eyebrow": "The farm",
+    "title": "Fazenda Eustáquio, in the shade of the forest.",
+    "lead": "Southern Bahia, near Jussari and the Serra do Teimoso reserve. Around 1000 m above sea level. Shade-grown cocoa, grown ecologically.",
+    "image": "/images/cacau-na-arvore.webp",
+    "alt": "Orange cocoa pod on the tree at Fazenda Eustáquio"
+  },
+  "facts": [
+    { "label": "Name", "value": "Fazenda Eustáquio" },
+    { "label": "Region", "value": "Southern Bahia · Jussari · Serra do Teimoso" },
+    { "label": "Altitude", "value": "around 1000 m" },
+    { "label": "Biome", "value": "Atlantic Forest (Mata Atlântica)" },
+    { "label": "Shade", "value": "jequitibá and ipê trees" },
+    { "label": "Growing", "value": "ecological, no agrochemicals" }
+  ],
+  "gallery": [
+    {
+      "src": "/images/fazenda-barcaca.webp",
+      "alt": "Cocoa drying barge at Fazenda Eustáquio",
+      "caption": "The barge: beans drying in the mountain sun."
+    },
+    {
+      "src": "/images/cacau-e-trabalhador.webp",
+      "alt": "Farm worker with freshly opened cocoa",
+      "caption": "From grove to bean, the work is by hand."
+    },
+    {
+      "src": "/images/licensed/cocoa-pod-open-aude.jpg",
+      "alt": "Opened cocoa pod with fresh beans",
+      "caption": "Opened pod — Aude, CC BY-SA 3.0, Wikimedia Commons.",
+      "licensed": true
+    },
+    {
+      "src": "/images/licensed/cacao-red-pods-hobgood.jpg",
+      "alt": "Red Theobroma cacao pods on the tree",
+      "caption": "Red pods — Nick Hobgood, CC BY-SA 3.0, Wikimedia Commons.",
+      "licensed": true
+    }
+  ]
+}

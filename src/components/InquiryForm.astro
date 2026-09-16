@@ -1,0 +1,287 @@
+---
+import type { UiCopy } from '../lib/content';
+import { inquiryEmail, web3formsKey } from '../lib/site';
+
+interface Props {
+  copy: UiCopy['form'];
+}
+
+const { copy } = Astro.props;
+const email = inquiryEmail();
+const key = web3formsKey();
+---
+
+<div
+  class="rounded-3xl border border-cocoa/10 bg-white/90 p-6 shadow-[0_24px_60px_-32px_rgba(60,36,21,0.5)] sm:p-8"
+  data-inquiry-root
+  data-state="empty"
+>
+  <div data-panel="form">
+    <p class="text-sm text-cocoa-mid" data-empty-hint>{copy.emptyHint}</p>
+
+    <div
+      class="mt-4 hidden rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-900"
+      data-error
+      role="alert"
+    >
+      <p>{copy.error}</p>
+      <button
+        type="button"
+        class="mt-2 text-sm font-semibold text-red-900 underline"
+        data-error-retry
+      >
+        {copy.errorRetry}
+      </button>
+    </div>
+
+    <div
+      class="mt-4 hidden rounded-2xl border border-forest/30 bg-forest-soft px-4 py-3 text-sm text-cocoa"
+      data-loading
+      role="status"
+    >
+      {copy.loading}
+    </div>
+
+    <form class="mt-6 grid gap-4" data-inquiry-form>
+      <input type="hidden" name="from_name" value="Amêndoa D'Cacau site" />
+      <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <label class="grid gap-1.5 text-sm font-medium text-cocoa">
+        <span>{copy.name} <span class="font-normal text-cocoa-light">*</span></span>
+        <input
+          class="rounded-xl border border-cocoa/15 bg-paper px-3 py-2.5 font-normal text-ink outline-none ring-forest/40 focus:ring-2"
+          type="text"
+          name="name"
+          required
+          autocomplete="name"
+          placeholder={copy.placeholders.name}
+        />
+      </label>
+
+      <label class="grid gap-1.5 text-sm font-medium text-cocoa">
+        <span>{copy.email} <span class="font-normal text-cocoa-light">*</span></span>
+        <input
+          class="rounded-xl border border-cocoa/15 bg-paper px-3 py-2.5 font-normal text-ink outline-none ring-forest/40 focus:ring-2"
+          type="email"
+          name="email"
+          required
+          autocomplete="email"
+          placeholder={copy.placeholders.email}
+        />
+      </label>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <label class="grid gap-1.5 text-sm font-medium text-cocoa">
+          <span>{copy.company} <span class="font-normal text-cocoa-light">({copy.optional})</span></span>
+          <input
+            class="rounded-xl border border-cocoa/15 bg-paper px-3 py-2.5 font-normal text-ink outline-none ring-forest/40 focus:ring-2"
+            type="text"
+            name="company"
+            autocomplete="organization"
+            placeholder={copy.placeholders.company}
+          />
+        </label>
+        <label class="grid gap-1.5 text-sm font-medium text-cocoa">
+          <span>{copy.country} <span class="font-normal text-cocoa-light">*</span></span>
+          <input
+            class="rounded-xl border border-cocoa/15 bg-paper px-3 py-2.5 font-normal text-ink outline-none ring-forest/40 focus:ring-2"
+            type="text"
+            name="country"
+            required
+            autocomplete="country-name"
+            placeholder={copy.placeholders.country}
+          />
+        </label>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <label class="grid gap-1.5 text-sm font-medium text-cocoa">
+          <span>{copy.interest} <span class="font-normal text-cocoa-light">*</span></span>
+          <select
+            class="rounded-xl border border-cocoa/15 bg-paper px-3 py-2.5 font-normal text-ink outline-none ring-forest/40 focus:ring-2"
+            name="interest"
+            required
+          >
+            {
+              copy.interestOptions.map((option) => (
+                <option value={option.value}>{option.label}</option>
+              ))
+            }
+          </select>
+        </label>
+        <label class="grid gap-1.5 text-sm font-medium text-cocoa">
+          <span>{copy.volume} <span class="font-normal text-cocoa-light">({copy.optional})</span></span>
+          <input
+            class="rounded-xl border border-cocoa/15 bg-paper px-3 py-2.5 font-normal text-ink outline-none ring-forest/40 focus:ring-2"
+            type="text"
+            name="volume"
+            placeholder={copy.placeholders.volume}
+          />
+        </label>
+      </div>
+
+      <label class="grid gap-1.5 text-sm font-medium text-cocoa">
+        <span>{copy.message} <span class="font-normal text-cocoa-light">*</span></span>
+        <textarea
+          class="min-h-32 rounded-xl border border-cocoa/15 bg-paper px-3 py-2.5 font-normal text-ink outline-none ring-forest/40 focus:ring-2"
+          name="message"
+          required
+          placeholder={copy.placeholders.message}></textarea>
+      </label>
+
+      <p class="text-sm text-cocoa-mid">
+        {copy.writeDirectly}{' '}
+        <a class="font-semibold text-forest underline decoration-forest/30" href={`mailto:${email}`}>{email}</a>
+      </p>
+
+      <button
+        type="submit"
+        class="inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white transition hover:bg-forest-dark disabled:cursor-wait disabled:opacity-70"
+        data-submit
+      >
+        {copy.submit}
+      </button>
+    </form>
+  </div>
+
+  <div class="hidden text-center" data-panel="success" role="status">
+    <p class="font-serif text-3xl text-cocoa" data-success-title>{copy.successTitle}</p>
+    <p class="mx-auto mt-3 max-w-md text-cocoa-mid" data-success-body></p>
+    <a
+      class="mt-6 inline-flex rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white hover:bg-forest-dark"
+      data-success-mail
+      href={`mailto:${email}`}
+    >
+      {copy.openMail}
+    </a>
+    <button
+      type="button"
+      class="mt-4 block w-full text-sm font-semibold text-cocoa-mid underline"
+      data-another
+    >
+      {copy.another}
+    </button>
+  </div>
+</div>
+
+<script
+  is:inline
+  define:vars={{
+    copy,
+    email,
+    key,
+  }}
+>
+  const root = document.querySelector('[data-inquiry-root]');
+  const form = document.querySelector('[data-inquiry-form]');
+  if (root instanceof HTMLElement && form instanceof HTMLFormElement) {
+    const formPanel = root.querySelector('[data-panel="form"]');
+    const successPanel = root.querySelector('[data-panel="success"]');
+    const errorBox = root.querySelector('[data-error]');
+    const loadingBox = root.querySelector('[data-loading]');
+    const submit = root.querySelector('[data-submit]');
+    const successBody = root.querySelector('[data-success-body]');
+    const successMail = root.querySelector('[data-success-mail]');
+    const emptyHint = root.querySelector('[data-empty-hint]');
+
+    const setState = (state) => {
+      root.dataset.state = state;
+      root.setAttribute('aria-busy', state === 'loading' ? 'true' : 'false');
+      errorBox?.classList.toggle('hidden', state !== 'error');
+      loadingBox?.classList.toggle('hidden', state !== 'loading');
+      if (emptyHint) emptyHint.classList.toggle('hidden', state !== 'empty');
+      if (submit instanceof HTMLButtonElement) {
+        submit.disabled = state === 'loading';
+        submit.textContent = state === 'loading' ? copy.sending : copy.submit;
+      }
+      form.querySelectorAll('input, select, textarea').forEach((el) => {
+        if (el instanceof HTMLInputElement && el.name === 'botcheck') return;
+        if ('disabled' in el) el.disabled = state === 'loading';
+      });
+      formPanel?.classList.toggle('hidden', state === 'success');
+      successPanel?.classList.toggle('hidden', state !== 'success');
+    };
+
+    const interestLabel = (value) => {
+      const found = copy.interestOptions.find((item) => item.value === value);
+      return found ? found.label : value;
+    };
+
+    const buildMailto = (data) => {
+      const subject = encodeURIComponent(`Amêndoa D'Cacau — ${interestLabel(data.interest)}`);
+      const body = encodeURIComponent(
+        [
+          `Name: ${data.name}`,
+          `Email: ${data.email}`,
+          `Company: ${data.company || '—'}`,
+          `Country: ${data.country}`,
+          `Interest: ${interestLabel(data.interest)}`,
+          `Volume: ${data.volume || '—'}`,
+          '',
+          data.message,
+        ].join('\n'),
+      );
+      return `mailto:${email}?subject=${subject}&body=${body}`;
+    };
+
+    const readFields = () => {
+      const fd = new FormData(form);
+      return {
+        name: String(fd.get('name') || '').trim(),
+        email: String(fd.get('email') || '').trim(),
+        company: String(fd.get('company') || '').trim(),
+        country: String(fd.get('country') || '').trim(),
+        interest: String(fd.get('interest') || '').trim(),
+        volume: String(fd.get('volume') || '').trim(),
+        message: String(fd.get('message') || '').trim(),
+        bot: fd.get('botcheck'),
+      };
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const data = readFields();
+      if (data.bot) {
+        setState('success');
+        return;
+      }
+      setState('loading');
+      const mailto = buildMailto(data);
+      if (successMail instanceof HTMLAnchorElement) successMail.href = mailto;
+
+      if (!key) {
+        window.setTimeout(() => {
+          if (successBody) {
+            successBody.textContent = `${copy.successMailto} ${email}.`;
+          }
+          setState('success');
+          window.location.href = mailto;
+        }, 400);
+        return;
+      }
+
+      try {
+        const payload = new FormData(form);
+        payload.set('access_key', key);
+        payload.set('subject', `Amêndoa D'Cacau — ${interestLabel(data.interest)}`);
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: payload,
+        });
+        const json = await response.json().catch(() => ({}));
+        if (!response.ok || json.success === false) throw new Error('submit failed');
+        if (successBody) successBody.textContent = copy.successWeb3;
+        setState('success');
+      } catch {
+        setState('error');
+      }
+    });
+
+    root.querySelector('[data-error-retry]')?.addEventListener('click', () => setState('empty'));
+    root.querySelector('[data-another]')?.addEventListener('click', () => {
+      form.reset();
+      setState('empty');
+    });
+  }
+</script>

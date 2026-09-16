@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "eyebrow": "Tree-to-bar · since 1890",
+    "title": "High-altitude cocoa from Bahia, now in Aveiro.",
+    "lead": "At Fazenda Eustáquio the trees grow in the shade of the Atlantic Forest, with no agrochemicals. A family house since the nineteenth century — with about one tonne of beans ready for chefs, makers and distributors in Europe.",
+    "cta": "Request a lot or sample",
+    "slides": [
+      {
+        "src": "/images/cacau-na-arvore.webp",
+        "alt": "Ripe cocoa pod on the tree at Fazenda Eustáquio, Atlantic Forest"
+      },
+      {
+        "src": "/images/slide/mao-com-cacau-4x3.webp",
+        "alt": "Hands holding Amêndoa D'Cacau cocoa beans"
+      },
+      {
+        "src": "/images/slide/circulo-cacau-4x3.webp",
+        "alt": "A ring of selected cocoa beans"
+      }
+    ]
+  },
+  "origin": {
+    "title": "Two shores, the same cocoa",
+    "bahia": {
+      "kicker": "Origin",
+      "title": "Fazenda Eustáquio, southern Bahia",
+      "text": "Near Jussari and the Serra do Teimoso reserve, around 1000 m above sea level. Shade-grown cocoa in the Atlantic Forest.",
+      "image": "/images/cacau-na-arvore-4x3.webp",
+      "alt": "Cocoa on the tree at Fazenda Eustáquio"
+    },
+    "aveiro": {
+      "kicker": "Europe",
+      "title": "Stock in Aveiro, Portugal",
+      "text": "About 1 tonne of beans for Europe. No shopping cart: write for a lot or a sample.",
+      "image": "/images/caixa-na-mao.webp",
+      "alt": "A box of rustic Amêndoa D'Cacau chocolate held in the hand"
+    }
+  },
+  "family": {
+    "kicker": "Family house",
+    "title": "In cocoa since the nineteenth century",
+    "text": "Our great-great-grandfather was already working the fruit in Brazil in 1890 — that is what the packaging still says, since 1890. Later generations stayed on the land. For more than fifteen years our father has run Fazenda Eustáquio, from tree to bar."
+  },
+  "teasers": [
+    {
+      "page": "products",
+      "image": "/images/produtos/amendoa-cacau.webp",
+      "alt": "Peeled cocoa beans",
+      "title": "Beans for Europe",
+      "text": "Lots from 1 kg. The focus for chefs, makers and distributors in the EU."
+    },
+    {
+      "page": "story",
+      "image": "/images/logo-4x3.webp",
+      "alt": "Amêndoa D'Cacau mark, integral natural, since 1890",
+      "title": "Our story",
+      "text": "A Brazilian rustic-chocolate house, with a European base in Aveiro."
+    },
+    {
+      "page": "farm",
+      "image": "/images/fazenda-barcaca.webp",
+      "alt": "Cocoa drying barge at Fazenda Eustáquio",
+      "title": "The farm",
+      "text": "Shade of jequitibá and ipê trees. Grown ecologically, without agrochemicals."
+    }
+  ],
+  "ctaBand": {
+    "title": "Want to work with this cocoa?",
+    "text": "A quote, a sample, or a lot sitting in Aveiro — write to us. We answer as a house, not as a shop.",
+    "button": "Get in touch"
+  }
+}

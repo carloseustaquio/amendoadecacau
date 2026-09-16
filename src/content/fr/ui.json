@@ -1,0 +1,75 @@
+{
+  "brand": "Amêndoa D'Cacau",
+  "tagline": "Chocolats rustiques · de l'arbre à la tablette",
+  "since": "depuis 1890",
+  "skip": "Aller au contenu",
+  "openMenu": "Ouvrir le menu",
+  "closeMenu": "Fermer le menu",
+  "nav": {
+    "home": "Accueil",
+    "story": "Notre histoire",
+    "farm": "La ferme",
+    "products": "Produits",
+    "contact": "Contact"
+  },
+  "cta": {
+    "inquire": "Demander un lot ou un échantillon",
+    "quote": "Demander un devis",
+    "products": "Voir les produits",
+    "story": "Lire notre histoire",
+    "farm": "Découvrir la ferme",
+    "contact": "Nous écrire"
+  },
+  "form": {
+    "title": "Demande de lot, devis ou échantillon",
+    "intro": "Pas de boutique en ligne. Dites-nous ce qu'il vous faut — fèves à Aveiro, chocolat rustique ou un échantillon — et nous répondons comme une maison familiale.",
+    "name": "Nom",
+    "email": "Email",
+    "company": "Entreprise",
+    "country": "Pays",
+    "interest": "Intérêt",
+    "volume": "Volume",
+    "message": "Message",
+    "required": "obligatoire",
+    "optional": "facultatif",
+    "placeholders": {
+      "name": "Votre nom",
+      "email": "vous@entreprise.com",
+      "company": "Chocolaterie, restaurant, distribution…",
+      "country": "Portugal, France, Allemagne…",
+      "volume": "ex. 25 kg, 1 t, échantillon",
+      "message": "Usage prévu, délais, livraison…"
+    },
+    "interestOptions": [
+      { "value": "beans", "label": "Fèves de cacao (lots B2B)" },
+      { "value": "chocolate", "label": "Chocolats et autres produits" },
+      { "value": "sample", "label": "Échantillon" }
+    ],
+    "submit": "Envoyer la demande",
+    "sending": "Envoi…",
+    "emptyHint": "Rien n'a encore été envoyé. Les champs marqués * sont obligatoires.",
+    "loading": "Préparation de votre demande…",
+    "error": "L'envoi a échoué. Réessayez ou écrivez-nous directement.",
+    "errorRetry": "Réessayer",
+    "successTitle": "Demande prête.",
+    "successWeb3": "Nous avons bien reçu votre message. Réponse depuis Aveiro dès que possible.",
+    "successMailto": "Votre messagerie va s'ouvrir avec le texte prêt. Sinon, utilisez le bouton ci-dessous ou écrivez à",
+    "openMail": "Ouvrir l'email",
+    "writeDirectly": "Ou écrivez à",
+    "another": "Envoyer une autre demande"
+  },
+  "footer": {
+    "blurb": "Maison familiale de cacao dans la forêt atlantique du sud de Bahia, avec une base européenne à Aveiro. De l'arbre à la tablette, sans agrochimie.",
+    "social": "Réseaux",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "creditsTitle": "Crédits photographiques",
+    "creditsFamily": "Photos de la ferme, des produits et de la marque : famille Amêndoa D'Cacau / Fazenda Eustáquio.",
+    "rights": "Amêndoa D'Cacau. Fazenda Eustáquio, Bahia · Aveiro, Portugal."
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas.",
+    "text": "Le chemin a peut-être changé. Revenez à l'accueil ou choisissez la langue.",
+    "home": "Retour à l'accueil"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "eyebrow": "La ferme",
+    "title": "Fazenda Eustáquio, à l'ombre de la forêt.",
+    "lead": "Sud de Bahia, près de Jussari et de la réserve de la Serra do Teimoso. Environ 1000 m d'altitude. Cacao d'ombre, culture écologique.",
+    "image": "/images/cacau-na-arvore.webp",
+    "alt": "Cabosse orange sur l'arbre à la Fazenda Eustáquio"
+  },
+  "facts": [
+    { "label": "Nom", "value": "Fazenda Eustáquio" },
+    { "label": "Région", "value": "Sud de Bahia · Jussari · Serra do Teimoso" },
+    { "label": "Altitude", "value": "environ 1000 m" },
+    { "label": "Biome", "value": "Forêt atlantique (Mata Atlântica)" },
+    { "label": "Ombre", "value": "jequitibás et ipês" },
+    { "label": "Culture", "value": "écologique, sans agrochimie" }
+  ],
+  "gallery": [
+    {
+      "src": "/images/fazenda-barcaca.webp",
+      "alt": "Barge de séchage du cacao à la Fazenda Eustáquio",
+      "caption": "La barge : le cacao sèche au soleil de la sierra."
+    },
+    {
+      "src": "/images/cacau-e-trabalhador.webp",
+      "alt": "Ouvrier de la ferme auprès du cacao fraîchement ouvert",
+      "caption": "Du verger à la fève, le geste reste manuel."
+    },
+    {
+      "src": "/images/licensed/cocoa-pod-open-aude.jpg",
+      "alt": "Cabosse ouverte avec des fèves fraîches",
+      "caption": "Cabosse ouverte — Aude, CC BY-SA 3.0, Wikimedia Commons.",
+      "licensed": true
+    },
+    {
+      "src": "/images/licensed/cacao-red-pods-hobgood.jpg",
+      "alt": "Cabosses rouges de Theobroma cacao sur l'arbre",
+      "caption": "Cabosses rouges — Nick Hobgood, CC BY-SA 3.0, Wikimedia Commons.",
+      "licensed": true
+    }
+  ]
+}

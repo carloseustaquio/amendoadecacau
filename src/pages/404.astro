@@ -1,0 +1,41 @@
+---
+import { getUi } from '../lib/content';
+import { localizedPath } from '../lib/i18n';
+import '../styles/global.css';
+
+const ui = getUi('pt');
+---
+
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 · Amêndoa D'Cacau</title>
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-paper-grain flex min-h-screen items-center justify-center px-5 text-center text-cocoa">
+    <div class="max-w-lg">
+      <img src="/images/logo-round.webp" alt="" class="mx-auto h-28 w-28 rounded-full" />
+      <h1 class="mt-6 font-serif text-4xl">{ui.notFound.title}</h1>
+      <p class="mt-3 text-cocoa-mid">{ui.notFound.text}</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a class="rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-white" href={localizedPath('home', 'pt')}>
+          PT
+        </a>
+        <a class="rounded-full bg-cocoa px-5 py-2.5 text-sm font-semibold text-cream" href={localizedPath('home', 'en')}>
+          EN
+        </a>
+        <a class="rounded-full bg-cocoa px-5 py-2.5 text-sm font-semibold text-cream" href={localizedPath('home', 'fr')}>
+          FR
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

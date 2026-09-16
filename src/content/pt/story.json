@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "eyebrow": "Quem somos",
+    "title": "Uma casa de cacau, da Bahia a Aveiro.",
+    "lead": "Amêndoa D'Cacau é uma marca brasileira de chocolates rústicos. Cultivamos o cacau e levamos o fruto até à barra — tree-to-bar — com a Europa a partir de Aveiro."
+  },
+  "portrait": {
+    "src": "/images/logo-round.webp",
+    "alt": "Selo Amêndoa D'Cacau, integral natural, desde 1890"
+  },
+  "timeline": [
+    {
+      "year": "1890",
+      "title": "O tetravô e o fruto",
+      "text": "A família está no cacau desde o século XIX. O nosso tetravô já trabalhava o fruto no sul da Bahia; as embalagens ainda dizem desde 1890."
+    },
+    {
+      "year": "Gerações",
+      "title": "A lavoura ficou em casa",
+      "text": "Filhos e netos continuaram a terra. O cacau aqui nunca foi um hobby de marca: é o ofício que atravessa a família."
+    },
+    {
+      "year": "15+ anos",
+      "title": "A geração de hoje",
+      "text": "Há mais de quinze anos o nosso pai conduz a Fazenda Eustáquio. Plantar, colher, fermentar, secar, seleccionar e transformar — o controlo fica na casa."
+    },
+    {
+      "year": "Aveiro",
+      "title": "Base europeia",
+      "text": "Portugal é o pé na Europa. Em Aveiro está o stock de amêndoas para quem faz chocolate deste lado do Atlântico."
+    }
+  ]
+}
