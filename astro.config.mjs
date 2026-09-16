@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://amendoadecacau.vercel.app',
+  site: 'https://amendoa-dcacau.vercel.app',
   output: 'static',
   i18n: {
     defaultLocale: 'pt',
